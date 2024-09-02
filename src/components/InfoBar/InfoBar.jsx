@@ -12,16 +12,15 @@ import { Link } from "react-router-dom";
 import TextContainer from "../TextContainer/TextContainer";
 import { BiLogOut } from "react-icons/bi";
 import { MdArrowOutward, MdLogout } from "react-icons/md";
-//import "./InfoBar.css";
-//import closeIcon from "../../icons/closeIcon.png";
-//import onlineIcon from "../../icons/onlineIcon.png";
 
 const InfoBar = ({ users, isOpen, toggleSidebar }) => {
   const [light, setLight] = useState(true);
+
   const change = () => {
     setLight(!light);
     document.body.classList.toggle("dark");
   };
+
   return (
     <div className="flex flex-col h-full justify-between">
       <div className="text-center flex flex-col mt-4 xl:mt-2  mr-4 xl:border-0 border-b-2 border-gray-600">
@@ -30,13 +29,13 @@ const InfoBar = ({ users, isOpen, toggleSidebar }) => {
             <img src={logo1} alt="logo" className="h-[70px]" />
             <h1 className="text-2xl font-serif">ADITYA'S CHAT ROOM</h1>
           </div>
-          <div className="flex justify-end md:justify-center">
-            <p className="text-md mb-2 xl:mt-[-20px] mr-8 md:mr-0">
+          <div className="flex justify-end sm:justify-center">
+            <p className="text-sm mb-2 xl:mt-[-20px] mr-8 sm:mr-0">
               App version 2.0.0
             </p>
             <button
               onClick={toggleSidebar}
-              className={`md:hidden p-1 mr-2 mt-[-10px]`}
+              className={`sm:hidden p-1 mr-2 mt-[-10px]`}
             >
               <FaX className="text-2xl text-white" />
             </button>
@@ -64,7 +63,7 @@ const InfoBar = ({ users, isOpen, toggleSidebar }) => {
       </div>
 
       <div className="w-full flex flex-col font-serif mb-6">
-        <div className="bg-gradient-to-b from-[#171717] to-[#242424] border-2 border-[#fff] p-4 rounded-xl mr-4 ml-4 md:ml-0 shadow-sm">
+        <div className="bg-gradient-to-b from-[#171717] to-[#242424] border-2 border-[#fff] p-4 rounded-xl mr-4 ml-4 sm:ml-0 shadow-sm">
           <div className="flex justify-center xl:gap-5 gap-2 items-center">
             <img
               className="mt-1"
@@ -74,7 +73,7 @@ const InfoBar = ({ users, isOpen, toggleSidebar }) => {
               alt=""
             />
             <div className="flex flex-col ">
-              <span className="text-md">Aditya Pratap Singh</span>
+              <span className="text-sm">Aditya Pratap Singh</span>
               <span className="text-xs text-fuchsia-200">
                 {" "}
                 pratapaditya84@gmail.com
@@ -87,7 +86,7 @@ const InfoBar = ({ users, isOpen, toggleSidebar }) => {
           </div>
         </div>
 
-        <div className="mt-4 mr-4 h-10 rounded-lg justify-center gap-2 xl:gap-8 hidden md:flex">
+        <div className="mt-4 mr-4 h-10 rounded-lg justify-center gap-2 xl:gap-8 hidden sm:flex">
           <button
             onClick={change}
             className={
