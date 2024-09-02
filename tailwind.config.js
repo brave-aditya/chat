@@ -6,7 +6,13 @@ export default {
   ],
   darkMode: "class",
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'sm': '576px',
+        // => @media (min-width: 992px) { ... }
+      },
+    },
+
   },
   plugins: [],
 }
