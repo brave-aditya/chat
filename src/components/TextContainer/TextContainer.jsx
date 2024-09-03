@@ -14,7 +14,7 @@ const TextContainer = ({ users }) => {
             {users.map(({ name }) => (
               <div key={name} className="flex space-y-2">
                 <br />
-                <div className="flex p-1 rounded-sm border-white xl:border-black xl:dark:border-white border-b-2 border-r-2">
+                <div className="flex p-1 rounded-md border-white xl:border-black xl:dark:border-white border-b-2 border-r-2">
                   <FaUserLarge className="text-2xl mt-1" />
                   <GoDotFill className="text-green-500 ml-[-5px] xl:ml-[-7px]" />
                 </div>

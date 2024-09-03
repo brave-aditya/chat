@@ -20,7 +20,7 @@ const Chat = () => {
   const [users, setUsers] = useState("");
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
-  const ENDPOINT = "https://chatbackend-84xx.onrender.com/";
+  const ENDPOINT = "https://chat-backend-ten-gold.vercel.app/";
   const [light, setLight] = useState(true);
 
   const change = () => {
@@ -104,7 +104,7 @@ const Chat = () => {
       </div>
 
       <div className="flex sm:h-screen h-[calc(100%-40px)] p-4">
-        <div className="xl:w-[25%] sm:w-[36%] hidden sm:block">
+        <div className="xl:w-[25%] sm:w-[40%] md:w-[36%] hidden sm:block">
           <InfoBar users={users} />
         </div>
 
